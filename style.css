@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Global Reset and Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Labster', cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    background-color: #000019;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Labster', cursive;
+}
+
+/* Header Styles */
+header {
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000019;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header ul li {
+    margin: 0;
+}
+
+header ul li a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    color: white;
+}
+
+header ul li a:hover {
+    color: #000019;
+    background-color: white;
+    transform: scale(1.1);
+}
+
+/* Main Section Styles */
+section.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-image: url(images/3add0ba4-d0c9-4fb5-98e0-8beae15d75f8.png);
+}
+
+section.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+section.main h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #f2f2f2;
+}
+
+section.main h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #c2c2c2;
+}
+
+section.main ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+section.main ul li {
+    margin:  10px;
+}
+
+section.main ul li a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+section.main ul li a:hover {
+    color: #00aced;
+    transform: scale(1.2);
+}
+
+section.main button {
+    background-color: #00aced;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+section.main button:hover {
+    background-color: #008bb9;
+    transform: scale(1.05);
+}
+
+/* About Section Styles */
+section.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    color: #f2f2f2;
+}
+
+section.about h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section.about .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}
+
+section.about .details img {
+    border-radius: 0 50% 0 50%;
+    max-width: 100%;
+}
+
+section.about .details p {
+    width: 50%;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+/* Skills Section Styles */
+section.skills {
+    padding: 50px 20px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+section.skills h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.tracks {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tracks > div {
+    background-color: #1e1e2f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.tracks > div h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skill i {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.skill h4 {
+    font-size: 1.2em;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skill i:hover {
+    color: #00aced;
+}
+
+/* styling projects section */
+
+#projects {
+    background-color: #000019;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#projects .project {
+    margin-bottom: 20px;
+}
+
+#projects img {
+    max-width: 100%;
+    display: block;
+    border-radius: 5px; /* Optional: Rounded corners for images */
+}
+
+#projects a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+#projects a:hover {
+    color: #00aced; /* Adjust link color on hover */
+}
+
+#projects > div {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#projects > div > div {
+    text-align: center;
+}
+
+#projects > div > div > a {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #1e1e2f; /* Darker background for buttons */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#projects > div > div > a:hover {
+    background-color: #00aced; /* Adjust button background on hover */
+    color: white; /* Adjust button text color on hover */
+}
+.project-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.project-links div {
+    font-size: 1.2em;
+}
+
+.project-links a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.project-links a:hover {
+    color: #00aced;
+}
+
+/* Contact Section Styles */
+section.contact {
+    text-align: center;
+    padding: 50px 20px;
+    color: #f2f2f2;
+}
+
+section.contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section.contact ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+section.contact ul li {
+    margin: 10px;
+}
+
+section.contact ul li a {
+    font-size: 2.3em;
+    color: #00aced;
+    transition: color 0.3s ease;
+}
+
+section.contact ul li a:hover {
+    color: #008bb9;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #c2c2c2;
+    width: 100%;
+}
+
+footer hr {
+    width: 50%;
+    margin: 10px auto;
+    border-color: #666;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+footer ul li a {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #f2f2f2;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #00aced;
+}
+
+footer p {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
+footer p a {
+    color: #c2c2c2;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #00aced;
+}
+
+@media (max-width: 768px) {
+    header ul {
+        width: 85%;
+        align-items: center;
+        margin: auto;
+    }
+
+    header ul li {
+        margin-bottom: 10px;
+    }
+
+    header ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    section.about h1 {
+        font-size: 2em; /* Decrease font size for smaller screens */
+    }
+
+    .about .details {
+        flex-direction: column;
+        gap: 10px;
+      
+    }
+
+    .about .details img {
+        width: 70%; /* Adjust image width for smaller screens */
+        max-width: 300px; /* Limit maximum width for better scaling */
+    }
+
+    .about .details p {
+        font-size: 0.9em; /* Decrease font size for smaller screens */
+        width: 100%;
+    }
+    .tracks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tracks > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    section.main {
+       background: none;
+    }
+    section.main h1 {
+        font-size: 2.5em;
+    }
+
+    section.main h3 {
+        font-size: 1.2em;
+    }
+    section.main .social-links li {
+        margin-bottom: 10px;
+        
+
+    }
+
+    section.main .social-links li a {
+        font-size: 1.5em;
+    }
+}
